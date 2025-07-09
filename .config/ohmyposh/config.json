@@ -35,12 +35,12 @@
           "properties": {
             "cache_duration": "none"
           },
-          "template": "  ",
+          "template": " ",
           "background": "transparent",
           "type": "session",
           "style": "plain",
           "foreground_templates": [
-            "{{ if gt .Code 0 }}p:red{{else}}p:white{{ end }}"
+            "{{ if gt .Code 0 }}p:red{{else}}p:yellow{{ end }}"
           ]
         },
         {

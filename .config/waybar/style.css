@@ -1,7 +1,7 @@
 /* Fully transparent background for the bar */
 window#waybar {
   background-color: transparent;
-  border: none;
+  margin-left: 5px;
 }
 
 
@@ -13,28 +13,30 @@ window#waybar {
 #network,
 #tray,
 #workspaces {
-  padding: 6px 13px;
-  margin: 0 6px;
-  background-color: rgba(40, 42, 54, 0.85);  /* semi-transparent background */
-  border-radius: 10px;
-  font-size: 13px;
+  color:#fefaf0;
+  padding: 6px 10px;
+  margin: 0 5px;
+  background-color: #111622;  /* semi-transparent background */
+/*  border: 2px solid #BBE3B1;*/
+  border-radius: 5px;
+  font-size: 13.3px;
   font-weight: 600;
   font-family: "FiraCode Nerd Font Semibold", "FiraCode Nerd Font";
-  transition: background-color 0.3s ease;
 }
 
-/* Hover effects 
+/* Hover effects */
 #clock:hover,
 #cpu:hover,
 #memory:hover,
 #network:hover,
 #workspaces:hover {
   background-color: rgba(98, 114, 164, 0.9);
+
 }
-*/
+
 
 /* Specific colors per module (optional) */
-#clock { 
+/*#clock { 
     color: #B5C0E6;
     margin-left: 15px;
 }
@@ -46,6 +48,7 @@ window#waybar {
 }
 #pulseaudio { color: #B5C0E6; }
 #tray { color: #B5C0E6; }
+*/
 
 /* Workspaces styling */
 #workspaces button {

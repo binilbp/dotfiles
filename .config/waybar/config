@@ -1,6 +1,8 @@
 {
 	"style": "~/.config/hyprbar/style.css",
-	"margin-top": 5,
+	"margin-top": 10,
+	"margin-left": 10,
+	"margin-right": 10,
 	"layer": "top",
 	"position": "top",
 	"reload_style_on_change": true,
@@ -52,7 +54,8 @@
 	},
 	"cpu": {
         "format": " {usage}%",
-        "tooltip": true
+        "tooltip": true,
+	"interval": 5
     },
     "memory": {
         "format": "  {percentage}%",
