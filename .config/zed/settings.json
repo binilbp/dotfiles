@@ -18,7 +18,7 @@
   "theme": {
     "mode": "dark",
     "light": "Nightfox",
-    "dark": "Nightfox"
+    "dark": "Nightfox - opaque"
   },
   "tabs": {
     "file_icons": true,
