@@ -12,7 +12,7 @@ fi
 
 # Zinit Source after Downloading the first time
 source "${ZINIT_HOME}/zinit.zsh"
-#FIXME! source ~/.local/share/zinit/plugins/Aloxaf---fzf-tab/fzf-tab.zsh
+source ~/.local/share/zinit/plugins/Aloxaf---fzf-tab/fzf-tab.zsh
 
 # Zinit Add Plugins
 zinit light zsh-users/zsh-syntax-highlighting
@@ -55,7 +55,7 @@ alias devshell='~/Projects/Flakes/devshell_choice.sh'
 
 
 # Shell Integrations
-eval "$(fzf --zsh)"
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 # Yazi
 function y() {
