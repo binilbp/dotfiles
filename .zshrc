@@ -72,3 +72,6 @@ export EDITOR='nvim'
  
 # Rustlings
 export PATH="$HOME/.cargo/bin:$PATH"
+
+#Force Truecolor
+export COLORTERM=truecolor
