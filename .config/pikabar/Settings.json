@@ -1,0 +1,50 @@
+{
+    "audioCodec": "opus",
+    "barMonitors": [
+        "HDMI-A-1"
+    ],
+    "bluetoothEnabled": false,
+    "colorRange": "limited",
+    "currentWallpaper": "/usr/share/wallpapers/pika/yurtle_s_travelling_pot_shop_by_neytirix_dfb2d8o.jpg",
+    "dimPanels": false,
+    "dockExclusive": false,
+    "dockMonitors": [
+        "HDMI-A-1"
+    ],
+    "fontSizeMultiplier": 1,
+    "monitorScaleOverrides": null,
+    "notificationMonitors": [
+        "HDMI-A-1"
+    ],
+    "pinnedExecs": [
+    ],
+    "profileImage": "/home/rain/.face",
+    "randomWallpaper": false,
+    "recordingCodec": "h264",
+    "recordingFrameRate": 60,
+    "recordingQuality": "very_high",
+    "reverseDayMonth": false,
+    "showActiveWindow": true,
+    "showActiveWindowIcon": true,
+    "showCorners": false,
+    "showCursor": true,
+    "showDock": false,
+    "showMediaInBar": true,
+    "showSystemInfoInBar": true,
+    "showTaskbar": false,
+    "taskbarIconSize": 24,
+    "transitionDuration": 1.1,
+    "transitionFps": 120,
+    "transitionType": "random",
+    "use12HourClock": true,
+    "useFahrenheit": false,
+    "useSWWW": true,
+    "useWallpaperTheme": false,
+    "videoPath": "~/Videos/",
+    "visualizerType": "radial",
+    "wallpaperFolder": "/usr/share/wallpapers/pika",
+    "wallpaperInterval": 300,
+    "wallpaperResize": "crop",
+    "weatherCity": "Thrissur",
+    "wifiEnabled": false
+}
