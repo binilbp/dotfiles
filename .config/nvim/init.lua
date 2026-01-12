@@ -1,3 +1,9 @@
+-- remove default welcome screen
+vim.opt.shortmess:append('I')
+
+-- disable netrw for nvim_tree
+vim.g.loaded_netrw = 1
+vim.g.loaded_netrwPlugin = 1
 -- enable line number and make it relative
 vim.opt.number = true
 vim.opt.relativenumber = true
