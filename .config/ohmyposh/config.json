@@ -84,9 +84,9 @@
             "cache_duration": "none",
             "display_mode": "environment",
             "fetch_version": false,
-            "fetch_virtual_env": false
+            "fetch_virtual_env": true
           },
-          "template": "(venv) ",
+          "template": "(\ue235 {{ .Venv }}) ",
           "foreground": "p:violet",
           "background": "transparent",
           "type": "python",
