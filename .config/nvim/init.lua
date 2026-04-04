@@ -17,6 +17,8 @@ vim.opt.expandtab = true
 -- enable system clipboard for nvim
 vim.opt.clipboard = "unnamedplus"
 
+-- exit terminal mode upon three esc button press
+vim.keymap.set('t', '<Esc><Esc><Esc>', '<cmd>ToggleTerm<cr>', { desc = 'Hide terminal' })
 
 -- lazy plugin setup
 require("config.lazy")
