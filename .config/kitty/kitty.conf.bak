@@ -8,7 +8,7 @@ font_size 	 15
 
 
 # BEGIN_KITTY_THEME
-# Night Owl
+# Yorumi Abyss
 include current-theme.conf
 # END_KITTY_THEME
 
@@ -21,6 +21,3 @@ sync_to_monitor yes
 
 #WIDOW_CLOSE_CONFIRMATION
 confirm_os_window_close 0
-
-#Audio 
-enable_audio_bell no

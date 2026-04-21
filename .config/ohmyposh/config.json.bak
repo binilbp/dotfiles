@@ -1,0 +1,138 @@
+{
+  "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
+  "version": 2,
+  "final_space": true,
+  "blocks": [
+    {
+      "type": "prompt",
+      "alignment": "left",
+      "newline" : true,
+      "segments": [
+        {
+          "type": "session",
+          "style": "plain",
+          "template": " 󰨷 ",
+          "background": "transparent",
+          "foreground_templates": [
+            "{{ if gt .Code 0 }}p:red{{else}}p:yellow{{ end }}"  
+          ] 
+        },
+        {
+          "type": "path",
+          "style": "plain",
+          "background": "transparent",
+          "foreground": "p:snowblue",
+          "properties": {
+            "style": "full",
+            "template" : "{{ .Path }}"
+          }
+        },
+        {
+          "type": "git",
+          "style": "powerline",
+          "powerline_symbol": "\ue0b0",
+          "foreground_templates": [
+            "{{ if or (.Working.Changed) (.Staging.Changed) }}p:red{{ end }}",
+            "{{ if and (gt .Ahead 0) (gt .Behind 0) }}p:orange{{ end }}",
+            "{{ if gt .Ahead 0 }}p:orange{{ end }}"
+          ],
+          "template": " {{ if .UpstreamURL }}{{ url .UpstreamIcon .UpstreamURL }} {{ end }}{{ .HEAD }}{{if .BranchStatus }} {{ .BranchStatus }}{{ end }}{{ if .Working.Changed }} \uf044 {{ .Working.String }}{{ end }}{{ if .Staging.Changed }} \uf046 {{ .Staging.String }}{{ end }} ", 
+          "properties": {
+            "branch_max_length": 25,
+            "fetch_status": true,
+            "fetch_upstream_icon": true
+          },
+          "background": "transparent",
+          "foreground": "p:lightgreen"
+        }
+      ]
+    },
+    {
+      "type": "rprompt",
+      "segments": [
+        {
+          "type": "python",
+          "style": "plain",
+          "template": "(venv) ",
+          "properties": {
+            "display_mode": "environment",
+            "fetch_version": false,
+            "fetch_virtual_env": false
+          },
+          "background": "transparent",
+          "foreground": "p:violet"
+        },
+        {
+          "type": "shell",
+          "style": "plain",
+          "template": " {{ if ne .Shell \"zsh\" }}{{ .Name }}{{ end }} ",
+          "background": "transparent",
+          "foreground": "p:violet"
+        },
+        {
+          "type": "nix-shell",
+          "style": "powerline",
+          "foreground": "p:violet",
+          "background": "transparent",
+          "template": "{{if ne .Type \"unknown\"}}   nix-{{.Type}} {{end}}"
+        },
+        {
+          "type": "executiontime",
+          "style": "plain",
+          "template": "{{ .FormattedMs }} ",
+          "background": "transparent",
+          "foreground": "p:grey",
+          "properties": {
+            "threshold": 500,
+            "style": "austin",
+            "always_enabled":true
+          }
+        }
+      ]
+    },
+    //new line block start 
+    {
+      "type": "prompt",
+      "alignment": "left",
+      "newline" : true,
+      "segments": [
+        {
+          "type": "text",
+          "style": "plain",
+          "template": " ❯ ",
+          "background": "transparent",
+          "foreground_templates": [
+            "{{ if gt .Code 0 }}p:red{{else}}p:violet{{ end }}"
+          ]
+ 
+       }
+     ]
+    }
+  ],
+ "transient_prompt": {
+    "template": "❯",
+    "background": "transparent",
+    "foreground_templates": [
+      "{{ if gt .Code 0 }}p:red{{else}}p:violet{{ end }}"
+    ]
+   },
+  "secondary_prompt": {
+    "template": " ",
+    "background": "transparent",
+    "foreground": "p:black"
+  },
+  "palette": {
+    "black": "#262B44",
+    "snowblue": "#76ADCC",
+    "blue": "#4B95E9",
+    "lightgreen": "#95C463",
+    "grey": "#A1A3AC",
+    "violet": "#BD93F9",
+    "green": "#59C9A5",
+    "orange": "#F07623",
+    "red": "#D81E5B",
+    "white": "#E0DEF4",
+    "yellow": "#F8B34E",
+    "lightyellow": "#DBC074"
+  }
+}
