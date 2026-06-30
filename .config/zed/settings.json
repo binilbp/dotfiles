@@ -7,22 +7,52 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "buffer_line_height": {
+    "custom": 1.399999976158142
+  },
+  "buffer_font_weight": 400.0,
+  "agent_ui_font_size": 16.05,
+  "ui_font_family": "JetBrains Mono NL",
+  "buffer_font_family": "JetBrains Mono",
+  "vim": {
+    "toggle_relative_line_numbers": true,
+  },
+  "disable_ai": true,
+  "edit_predictions": {
+    "allow_data_collection": "no",
+    "provider": "none",
+  },
+  "project_panel": {
+    "dock": "left",
+  },
+  "outline_panel": {
+    "dock": "left",
+  },
+  "collaboration_panel": {
+    "dock": "left",
+  },
+  "agent": {
+    "dock": "right",
+    "favorite_models": [],
+    "model_parameters": [],
+  },
+  "git_panel": {
+    "dock": "left",
+  },
   "vim_mode": true,
   "telemetry": {
     "diagnostics": false,
-    "metrics": false
+    "metrics": false,
   },
-  "ui_font_size": 17,
-  "buffer_font_size": 17,
-  // "buffer_font_family": "FiraCode Nerd Font Propo",
+  "ui_font_size": 18.0,
+  "buffer_font_size": 18.0,
   "theme": {
     "mode": "dark",
-    "light": "Nightfox",
-    "dark": "Nightfox - opaque"
+    "light": "Tokyo Night Light",
+    "dark": "Tokyo Night Storm",
   },
   "tabs": {
     "file_icons": true,
-    "git_status": true
+    "git_status": true,
   },
-  "relative_line_numbers": true
 }
