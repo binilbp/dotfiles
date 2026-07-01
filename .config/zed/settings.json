@@ -7,8 +7,12 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "terminal": {
+    "font_size": 15.0,
+    "dock": "right",
+  },
   "buffer_line_height": {
-    "custom": 1.399999976158142
+    "custom": 1.399999976158142,
   },
   "buffer_font_weight": 400.0,
   "agent_ui_font_size": 16.05,
